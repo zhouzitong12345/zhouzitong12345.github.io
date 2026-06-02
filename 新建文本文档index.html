@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简介</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "微软雅黑", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ffeaa7, #81ecec);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: #fff;
+            width: 100%;
+            max-width: 420px;
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .name {
+            font-size: 32px;
+            color: #2d3436;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .major {
+            font-size: 18px;
+            color: #00b894;
+            margin-bottom: 25px;
+        }
+
+        .intro {
+            font-size: 16px;
+            color: #636e72;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .hobby-title {
+            font-size: 17px;
+            color: #e17055;
+            margin-bottom: 15px;
+        }
+
+        .hobby-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .hobby-tag {
+            background: #dfe6e9;
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 14px;
+            color: #2d3436;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <!-- 在这里修改你的信息 -->
+        <h1 class="name">your name</h1>
+        <p class="major">所学专业</p>
+        <p class="intro">这里填写你的一句话个人简介，积极阳光一点哦~</p>
+        
+        <h3 class="hobby-title">兴趣爱好</h3>
+        <div class="hobby-list">
+            <span class="hobby-tag">阅读</span>
+            <span class="hobby-tag">运动</span>
+            <span class="hobby-tag">编程</span>
+            <span class="hobby-tag">听歌</span>
+        </div>
+    </div>
+</body>
+</html>
